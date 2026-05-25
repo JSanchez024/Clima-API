@@ -21,7 +21,7 @@ export default function Form() {
     const handleSubmite = ( e: FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         if(Object.values(search).includes('')){
-            console.log('si hay campos vacios...')
+            console.log('si hay campos vacios..')
         }
     }
 
