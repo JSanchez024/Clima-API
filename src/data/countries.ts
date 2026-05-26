@@ -2,6 +2,7 @@ import type { Country } from "../types"
 
 
 export const countries : Country[] = [
+  { code: 'CL', name: 'Chile' },
   { code: 'US', name: 'Estados Unidos' },
   { code: 'MX', name: 'México' },
   { code: 'AR', name: 'Argentina' },
@@ -9,5 +10,4 @@ export const countries : Country[] = [
   { code: 'CR', name: 'Costa Rica' },
   { code: 'ES', name: 'España' },
   { code: 'PE', name: 'Perú' },
-  { code: 'CL', name: 'Chile' },
 ]
