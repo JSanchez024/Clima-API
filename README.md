@@ -31,5 +31,6 @@ Aquí tienes un vistazo de la interfaz principal de la aplicación:
 <img width="1558" height="607" alt="Captura de pantalla 2026-05-26 132315" src="https://github.com/user-attachments/assets/52addab6-5d74-40fc-8995-fc14bacb5a4b" />
 
 ✒️ Autor
+---
 Joaquin Sanchez / JSanchez024
 
