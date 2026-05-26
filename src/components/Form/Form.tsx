@@ -1,4 +1,4 @@
-import { useState, type ChangeEvent, type FormEvent } from 'react';
+import { useState, type ChangeEvent} from 'react';
 import type { SearchType } from '../../types';
 import { countries } from '../../data/countries';
 import styles from './Form.module.css';
