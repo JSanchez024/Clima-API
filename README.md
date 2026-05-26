@@ -8,6 +8,7 @@
 
 * **Búsqueda Global:** Consulta el clima seleccionando un país y escribiendo el nombre de la ciudad.
 * **Datos en Tiempo Real:** Obtén temperatura actual, temperatura minima y maxima.
+* **Tipado Estricto:** Código robusto gracias a TypeScript, que garantiza que los datos de la API se manejen correctamente.
 * **Interfaz Adaptativa (Responsive):** Diseño optimizado para visualizarse correctamente tanto en dispositivos móviles como en pantallas de escritorio.
 * **Validación de Formularios:** Evita consultas vacías o erróneas mediante alertas.
 
@@ -19,6 +20,7 @@ El proyecto fue construido utilizando el siguiente stack tecnológico:
 
 * **React** Estructura semántica del sitio web.
 * **CSS:** Estilos personalizados, diseño limpio y fondo dinámico/oscuro enfocado en la experiencia de usuario.
+* **TypeScript:** Programación orientada a objetos, interfaces para tipar las respuestas de la API y lógica de validación del formulario.
 * **JavaScript:** Consumo de la API de clima, manipulación del DOM y lógica de validación del formulario.
 * **API Utilizada:** [OpenWeatherMap API](https://openweathermap.org/api).
 
