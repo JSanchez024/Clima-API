@@ -1,75 +1,35 @@
-# React + TypeScript + Vite
+# ⛅ Buscador de Clima
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+¡Bienvenido al **Buscador de Clima**! Esta es una aplicación web intuitiva que permite a los usuarios consultar las condiciones climatológicas de las ciudades seleccionadas del mundo en tiempo real de una forma rápida y sencilla.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Características
 
-## React Compiler
+* **Búsqueda Global:** Consulta el clima seleccionando un país y escribiendo el nombre de la ciudad.
+* **Datos en Tiempo Real:** Obtén temperatura actual, temperatura minima y maxima.
+* **Interfaz Adaptativa (Responsive):** Diseño optimizado para visualizarse correctamente tanto en dispositivos móviles como en pantallas de escritorio.
+* **Validación de Formularios:** Evita consultas vacías o erróneas mediante alertas.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## 🛠️ Tecnologías Utilizadas
 
-## Expanding the ESLint configuration
+El proyecto fue construido utilizando el siguiente stack tecnológico:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* **React** Estructura semántica del sitio web.
+* **CSS:** Estilos personalizados, diseño limpio y fondo dinámico/oscuro enfocado en la experiencia de usuario.
+* **JavaScript:** Consumo de la API de clima, manipulación del DOM y lógica de validación del formulario.
+* **API Utilizada:** [OpenWeatherMap API](https://openweathermap.org/api).
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 📸 Vista Previa
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Aquí tienes un vistazo de la interfaz principal de la aplicación:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+<img width="1558" height="607" alt="Captura de pantalla 2026-05-26 132315" src="https://github.com/user-attachments/assets/52addab6-5d74-40fc-8995-fc14bacb5a4b" />
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+✒️ Autor
+Joaquin Sanchez / JSanchez024
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
